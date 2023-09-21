@@ -1,0 +1,20 @@
+section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 32px;
+  justify-content: center;
+}
+
+header {
+  background-color: #333;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+}

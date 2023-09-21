@@ -1,0 +1,40 @@
+li {
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid;
+  text-align: right;
+  cursor: pointer;
+}
+
+.color-box {
+  height: 20px;
+  width: 20px;
+}
+
+mat-icon {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+}
+
+mat-icon:hover {
+  color: #007BFF;
+  transform: scale(1.1);
+}
+
+mat-icon:active {
+  transform: scale(0.95);
+}
+
+.selected {
+  background: aquamarine;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+

@@ -1,0 +1,23 @@
+<canvas #drawingCanvas width="1000" height="500" appCursor (mousedown)="mouseDown($event)"
+  (mousemove)="mouseMove($event)" (mouseup)="mouseUp($event)">
+</canvas>
+
+
+<div class="info-container">
+  <div class="tool-info">
+    <h2>current Tool: {{currentTool()}}</h2>
+    <h2>current Color: {{color()}}</h2>
+  </div>
+
+  <div class="selected-shape-info">
+    <h2>Selected Shape</h2>
+    <div *ngIf="currentShape(); else noselection">
+      <h2 *ngIf="currentShape()?.name">Shape: {{currentShape().name }}</h2>
+      <h2>Color: {{ currentShape().color }}</h2>
+    </div>
+
+    <ng-template #noselection>
+      <h2>No shape selected</h2>
+    </ng-template>
+  </div>
+</div>

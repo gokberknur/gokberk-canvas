@@ -1,0 +1,19 @@
+<div class="toolbox">
+  <li *ngFor="let tool of toolbox" [class.selected]="tool === store.currentTool()" (click)="selectTool(tool)">
+    <span>
+      {{ tool }}
+    </span>
+    <mat-icon> {{ tool| iconPipe }}
+    </mat-icon>
+  </li>
+</div>
+
+<div class="colorPlaette">
+  <li *ngFor="let color of colors" (click)="selectColor(color)" [class.selected]="color === store.currentColor()">
+    <div class="color-box" [style.background]="colorCodes[color]">
+    </div>
+    <span>
+      {{color}}
+    </span>
+  </li>
+</div>

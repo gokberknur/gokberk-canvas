@@ -1,0 +1,11 @@
+canvas {
+  background: lightgray;
+
+  border: 1px solid black;
+  cursor: crosshair;
+}
+
+.info-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
